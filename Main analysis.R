@@ -5,8 +5,7 @@
 #### Helmholtz Zentrum Muenchen; Yale School of Public Health
 ##########################################################################################
 ####Load R packages for this analysis
-library(lubridate); library(ggplot2); library(cowplot); library(tsModel);library(dlnm)
-library(splines); library(gnm); library(foreign); library(ggsci)
+library(dlnm); library(splines); library(gnm)
 
 ##Function to calculate the p-value for difference between 2 RRs with 95%CI 
 pvalue_dif_RRs <- function(RR1, RR1.low, RR1.high, RR2, RR2.low, RR2.high){
