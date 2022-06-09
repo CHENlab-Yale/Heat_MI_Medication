@@ -56,16 +56,14 @@ MMT.NonfatalMI <- 7.5 ## degree C
 ##Calcium_channel_blocker (CABLOB); 
 ##Diuretics(DIURB); Statins(STATIB)
 Subgroup.names <- c("ANTPLB","NoANTPLB","ACEB","NoACEB", "BBLOKB", "NoBBLOKB",  "CABLOB","NoCABLOB",
-                    "DIURB","NoDIURB","STATIB","NoSTATIB", 
-                    "Anticoagulants", "NoAnticoagulants","Antihypertensives", "NoAntihypertensives",
-                    "Lipidlowering", "NoLipidlowering", "Antidiabetics", "NoAntidiabetics")
+                    "DIURB","NoDIURB","STATIB","NoSTATIB")
 ##corresponding Drug group
 Drug.groups <- c("Antiplatelet",  "ACE inhibitors", "Beta blocker",  "Calcium channel blocker",
-                 "Diuretics", "Statin", "Anticoagulants","Antihypertensives","Lipidlowering","Antidiabetics")
+                 "Diuretics", "Statin")
 
 
 ##dataframe to store the results
-TempRR <- matrix(rep(NA,(10*2)*8),ncol=8) # 10 for 10 droug.group; 2 for users and non-users of medication
+TempRR <- matrix(rep(NA,(6*2)*8),ncol=8) # 6 for 6 droug.group; 2 for users and non-users of medication
 colnames(TempRR) <- c("Drug.group","Medication","RR","RRlow","RRhigh","p.dif")
 TempRR <- as.data.frame(TempRR)
 
